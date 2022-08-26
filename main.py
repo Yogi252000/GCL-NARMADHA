@@ -139,7 +139,7 @@ if selected == "Ballast":
     fig11.update_yaxes(visible=True, showticklabels=True, title_font=dict(size=12))
     st.plotly_chart(fig11, use_container_width=True)
     st.write('Ballast data')
-    second = pd.read_csv("voyage 1.csv")
+    second = pd.read_csv("Voyage 1.csv")
     st.write(second)
 
 if selected == "Laden-Speed & Con":
