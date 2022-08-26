@@ -249,7 +249,7 @@ if selected == "Ballast-Speed & con":
     fig1.update_yaxes(range=[0, 60])
     fig1.update_yaxes(visible=True, showticklabels=True, title_font=dict(size=12))
     st.plotly_chart(fig1, use_container_width=True)
-    data = pd.read_csv("Ballast.csv")
+    data = pd.read_csv("ballast.csv")
     st.write(data)
 
 
