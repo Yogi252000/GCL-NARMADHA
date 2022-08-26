@@ -89,7 +89,7 @@ if selected == "Laden":
     fig.update_yaxes(visible=True,showticklabels=True,title_font=dict(size=12))
     st.plotly_chart(fig, use_container_width=True)
     st.write('Laden data')
-    first = pd.read_csv("Voyage.csv")
+    first = pd.read_csv("voyage.csv")
     st.write(first)
 
 if selected == "Ballast":
@@ -139,7 +139,7 @@ if selected == "Ballast":
     fig11.update_yaxes(visible=True, showticklabels=True, title_font=dict(size=12))
     st.plotly_chart(fig11, use_container_width=True)
     st.write('Ballast data')
-    second = pd.read_csv("Voyage 1.csv")
+    second = pd.read_csv("voyage 1.csv")
     st.write(second)
 
 if selected == "Laden-Speed & Con":
@@ -195,7 +195,7 @@ if selected == "Laden-Speed & Con":
     fig2.update_yaxes(range=[0, 60])
     fig2.update_yaxes(visible=True, showticklabels=True, title_font=dict(size=12))
     st.plotly_chart(fig2, use_container_width=True)
-    data = pd.read_csv("Laden.csv")
+    data = pd.read_csv("laden.csv")
     st.write(data)
 
 
